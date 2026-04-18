@@ -28,7 +28,7 @@ jobs:
         run: docker build -t vapt-tools .
 
       - name: Tag image
-        run: docker tag vapt-tool 320060061347.dkr.ecr.eu-north-1.amazonaws.com/pythonproj:latest
+        run: docker tag vapt-tools 320060061347.dkr.ecr.eu-north-1.amazonaws.com/pythonproj:latest
 
       - name: Push to ECR
-        run: docker push 320060061347.dkr.ecr.eu-north-1.amazonaws.com/pythonproj
+        run: docker push 320060061347.dkr.ecr.eu-north-1.amazonaws.com/pythonproj:latest
