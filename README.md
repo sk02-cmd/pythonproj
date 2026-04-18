@@ -1,3 +1,4 @@
 # vapt-tool
- uvicorn app.main:app --reload
+ uvicorn app.main:apppa --reload
+
  pip install -r requirements.txt
