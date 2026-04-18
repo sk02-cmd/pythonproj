@@ -20,9 +20,8 @@ jobs:
           aws-region: eu-north-1
 
       - name: Login to ECR
-        run: |
-          aws ecr get-login-password --region ap-south-1 | \
-          docker login --username AWS --password-stdin 320060061347.dkr.ecr.ap-south-1.amazonaws.com
+        run: aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 320060061347.dkr.ecr.eu-north-1.amazonaws.com  
+
 
       - name: Build image
         run: docker build -t vapt-tools .
